@@ -5,7 +5,7 @@ current_pos_2 = 50
 dial_range = 100
     
 
-with open("Day 1/day1_input.txt", "r") as file:
+with open("2025/Day 1/day1_input.txt", "r") as file:
     lines = file.readlines()
 
 
