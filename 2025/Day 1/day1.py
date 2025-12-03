@@ -12,10 +12,12 @@ with open("2025/Day 1/day1_input.txt", "r") as file:
     for line in lines:
         direction, steps = line[0], int(line[1:])
 
+        # part 1
         current_pos_2 += steps if direction == "R" else -steps
         current_pos_2 %= 100
         count += current_pos_2 == 0
-
+        
+        # part 2
         for _ in range(steps):
             current_pos += 1 if direction == "R" else -1
             current_pos %= 100
